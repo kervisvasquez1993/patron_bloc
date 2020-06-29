@@ -189,10 +189,6 @@ class LoginPage extends StatelessWidget {
   }
 
   _login(LoginBloc bloc, BuildContext context) {
-    print("====");
-    print('Email : ${bloc.email}');
-    print('password : ${bloc.password}');
-    print('=====');
     Navigator.pushReplacementNamed(context, 'home');
   }
 }
