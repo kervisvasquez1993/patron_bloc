@@ -27,6 +27,26 @@ class LoginPage extends StatelessWidget {
           borderRadius: BorderRadius.circular(100.0),
           color: Color.fromRGBO(255, 255, 255, 0.05)),
     );
+
+    final Nombre_header = Container(
+        padding: EdgeInsets.only(top: 50.0),
+        child: Column(
+          children: <Widget>[
+            Icon(
+              Icons.person_pin_circle,
+              color: Colors.white,
+              size: 100.0,
+            ),
+            SizedBox(
+              height: 10.0,
+              width: double.infinity,
+            ),
+            Text(
+              'Red Vital',
+              style: TextStyle(color: Colors.white, fontSize: 25.0),
+            ),
+          ],
+        ));
     return Stack(
       children: <Widget>[
         FondoMorado,
@@ -45,6 +65,7 @@ class LoginPage extends StatelessWidget {
           right: -10.0,
           child: circulo,
         ),
+        Nombre_header,
       ],
     );
   }
